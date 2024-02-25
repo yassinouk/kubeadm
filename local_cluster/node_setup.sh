@@ -8,7 +8,7 @@ set -e
 # STEPS
 #0 - Become root (saves typing sudo before every command) and disable swap.
 sudo -i
-swapoff -a
+#swapoff -a
 #1 - Update the apt package index and install packages needed to use the Kubernetes apt repository.
 apt-get update
 apt-get install -y apt-transport-https ca-certificates curl
